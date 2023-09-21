@@ -1,20 +1,17 @@
-import { useState } from 'react'
-import './App.css'
+import { useState } from 'react';
+import './App.css';
+import Index from './components/ViedeosPlayer/index';
 
 function App() {
-  const [count, setCount] = useState(0)
-  const videoUrl = "https://www.youtube.com/shorts/lEvrGkwDH0Q?feature=share";
+  
+  
 
   
   return (
     <>
       <div>
         <div className='main'>
-        <iframe
-        src={videoUrl}
-        controls= {false}
-
-        ></iframe>
+        <Index />
         </div>
       </div>
     </>
